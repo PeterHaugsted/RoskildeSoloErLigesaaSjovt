@@ -15,6 +15,7 @@ import static javafx.scene.paint.Color.RED;
 
 
 public class CreateShiftsController implements AppContact {
+    //Here is where a responsible would create a shift
 
     @FXML
     private APPHANDLER app;
@@ -50,19 +51,23 @@ public class CreateShiftsController implements AppContact {
         if (user != null) {
             foundor.setText("Person found!");
             foundor.setTextFill(GREEN);
+            //Here the system searches for the user, if it's in the system, it prints a message
 
         } else {
             foundor.setText("Person not found in system");
             foundor.setTextFill(RED);
+            //This is the errormessage if a person wasn't found
         }
     }
 
     public void submitS(MouseEvent mouseEvent) throws IOException {
         String navn = fullname.getText();
         addshift(navn);
+        //This is where you submit the found name
     }
 
     public void addshift(String name) throws IOException {
+        //This is where I add all the shifts, here we create a date, a task and what hours they should be working
         LocalDate dato = date.getValue();
         String task1 = task.getText();
         String timer = hours.getText();
@@ -74,6 +79,7 @@ public class CreateShiftsController implements AppContact {
             Shift shift = new Shift(dato.format(DateTimeFormatter.ofPattern("yyyy-MM-dd")), task1, timer, user);
             user.addShift(shift);
             succesfully.setText("Shift added");
+            //The date is set up with the "DateTimeFormatter" whereas I set the pattern to specifically be Year, month, date
         }
     }
 }

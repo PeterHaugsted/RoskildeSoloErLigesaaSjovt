@@ -8,6 +8,7 @@ import java.io.FileReader;
 import java.io.IOException;
 
 public class ContactRcontroller implements AppContact {
+    //This function is for when a volunteer has problems, and need to contact a responsible
 
 
     @FXML
@@ -33,6 +34,7 @@ public class ContactRcontroller implements AppContact {
     }
 
     public void search(MouseEvent mouseEvent) throws IOException {
+        //This is the search function integrated with the database
         String name = responsibleName.getText();
         User user = Database.getUserFromName(name);
         if (user != null){

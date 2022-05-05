@@ -11,7 +11,7 @@ import java.util.Random;
 import static javafx.scene.paint.Color.GREEN;
 
 public class CreateVController implements AppContact {
-
+    //This is where I create a volunteer
 
     @FXML
     private APPHANDLER app;
@@ -56,6 +56,7 @@ public class CreateVController implements AppContact {
             for (int i = 0; i < 5; i++) {
                 pass.append(characters[random.nextInt(characters.length)]);
             }
+            //Here we tell the user what to fill in, if they forget to put in info, the errormessage is then "Missing information"
 
             password1 = String.valueOf(pass); //setup password
 
@@ -66,6 +67,7 @@ public class CreateVController implements AppContact {
             auto.setText("Auto Generated Password:");
             missing.setTextFill(GREEN);
             missing.setText("Volunteer Created Successfully!");
+            //Here is what the user will see, and is also where the volunteer is loaded into the system.
 
         }
     }

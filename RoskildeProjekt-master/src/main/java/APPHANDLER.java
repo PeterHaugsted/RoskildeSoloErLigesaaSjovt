@@ -7,6 +7,7 @@ import java.io.IOException;
 
 
 public class APPHANDLER extends Application {
+    //I handle the apps, starting scenes changing scenes and to which.
 
     Scene sceneStart;
     private Stage stageStart;
