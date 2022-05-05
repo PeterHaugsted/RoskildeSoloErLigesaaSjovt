@@ -14,7 +14,7 @@
          -fx-background-size: cover, auto;
             </style>
       <children>
-         <Label layoutX="7.0" layoutY="8.0" prefHeight="26.0" prefWidth="259.0" text="L o g g e d  i n  a s :  R e s p o n s i b l e" textFill="WHITE">
+         <Label layoutX="7.0" layoutY="8.0" prefHeight="26.0" prefWidth="259.0" text="Logged in as: Responsible" textFill="WHITE">
             <font>
                <Font size="14.0" />
             </font>
@@ -22,7 +22,7 @@
                <Cursor fx:constant="DEFAULT" />
             </cursor>
          </Label>
-         <Button layoutX="528.0" layoutY="8.0" mnemonicParsing="false" onMouseClicked="#logout" style="-fx-background-color: transparent;" text="L o g  o u t" textFill="WHITE">
+         <Button layoutX="528.0" layoutY="8.0" mnemonicParsing="false" onMouseClicked="#logout" style="-fx-background-color: transparent;" text="Log out" textFill="WHITE">
             <cursor>
                <Cursor fx:constant="HAND" />
             </cursor>

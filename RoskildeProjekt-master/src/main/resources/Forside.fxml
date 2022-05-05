@@ -21,14 +21,14 @@
                <Cursor fx:constant="DEFAULT" />
             </cursor>
             </Label>
-            <Button alignment="CENTER" blendMode="SRC_ATOP" layoutX="192.0" layoutY="214.0" mnemonicParsing="false" onMouseClicked="#LogInR" prefHeight="54.0" prefWidth="245.0" style="-fx-background-color: transparent;" text="R e s p o n s i b l e " textAlignment="CENTER" textFill="WHITE" textOverrun="CENTER_ELLIPSIS">
+            <Button alignment="CENTER" blendMode="SRC_ATOP" layoutX="192.0" layoutY="214.0" mnemonicParsing="false" onMouseClicked="#LogInR" prefHeight="54.0" prefWidth="245.0" style="-fx-background-color: transparent;" text="Responsible" textAlignment="CENTER" textFill="WHITE" textOverrun="CENTER_ELLIPSIS">
                 <font>
                     <Font name="System Bold" size="24.0" />
                 </font>
             <cursor>
                <Cursor fx:constant="HAND" />
             </cursor></Button>
-            <Button layoutX="204.0" layoutY="258.0" mnemonicParsing="false" onMouseClicked="#LogInV" prefHeight="63.0" prefWidth="207.0" style="-fx-background-color: transparent;" text="V o l u n t e e r" textFill="WHITE" textOverrun="CLIP">
+            <Button layoutX="204.0" layoutY="258.0" mnemonicParsing="false" onMouseClicked="#LogInV" prefHeight="63.0" prefWidth="207.0" style="-fx-background-color: transparent;" text="Volunteer" textFill="WHITE" textOverrun="CLIP">
                 <font>
                     <Font name="System Bold Italic" size="24.0" />
                 </font>

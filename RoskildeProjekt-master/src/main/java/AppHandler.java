@@ -6,7 +6,7 @@ import javafx.stage.Stage;
 import java.io.IOException;
 
 
-public class APPHANDLER extends Application {
+public class AppHandler extends Application {
     //I handle the apps, starting scenes changing scenes and to which.
 
     Scene sceneStart;
@@ -15,7 +15,7 @@ public class APPHANDLER extends Application {
     @Override
     public void start(Stage stage) throws Exception {
         Database.loadVolunteerDataFromFileToUsers();
-        FXMLLoader fxmlLoader = new FXMLLoader(APPHANDLER.class.getResource("/Forside.fxml"));
+        FXMLLoader fxmlLoader = new FXMLLoader(AppHandler.class.getResource("/Forside.fxml"));
         sceneStart = fxmlLoader.load();
         ForsideController controllerstart = fxmlLoader.getController();
         controllerstart.setApp(this);

@@ -14,10 +14,10 @@ public class CreateVController implements AppContact {
     //This is where I create a volunteer
 
     @FXML
-    private APPHANDLER app;
+    private AppHandler app;
 
     @Override
-    public void setApp(APPHANDLER apphandler) {
+    public void setApp(AppHandler apphandler) {
         this.app = apphandler;
     }
 

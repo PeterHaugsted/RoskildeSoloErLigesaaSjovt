@@ -2,22 +2,17 @@ import javafx.fxml.FXML;
 import javafx.scene.control.Label;
 import javafx.scene.input.MouseEvent;
 
-import java.io.BufferedReader;
-import java.io.File;
-import java.io.FileReader;
 import java.io.IOException;
-import java.net.URL;
-import java.util.ResourceBundle;
 
 
 public class MyInfocontroller implements AppContact {
 
 
     @FXML
-    private APPHANDLER app;
+    private AppHandler app;
 
     @Override
-    public void setApp(APPHANDLER apphandler) {
+    public void setApp(AppHandler apphandler) {
         this.app = apphandler;
     }
 

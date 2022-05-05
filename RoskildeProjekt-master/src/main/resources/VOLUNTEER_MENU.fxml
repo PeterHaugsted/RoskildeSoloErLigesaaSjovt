@@ -16,19 +16,19 @@
         -fx-background-size: cover, auto;
     </style>
     <children>
-        <Label layoutX="14.0" layoutY="14.0" prefHeight="26.0" prefWidth="275.0" text="L o g g e d  i n  a s :  V o l u n t e e r">
+        <Label layoutX="14.0" layoutY="14.0" prefHeight="26.0" prefWidth="275.0" text="Logged in as: Volunteer">
             <font>
                 <Font size="14.0" />
             </font>
         </Label>
-        <Button layoutX="528.0" layoutY="8.0" mnemonicParsing="false" onMouseClicked="#logout" style="-fx-background-color: transparent;" text="L o g   o u t" textFill="BLACK">
+        <Button layoutX="528.0" layoutY="8.0" mnemonicParsing="false" onMouseClicked="#logout" style="-fx-background-color: transparent;" text="Log out" textFill="BLACK">
             <cursor>
                 <Cursor fx:constant="HAND" />
             </cursor>
             <font>
                 <Font size="14.0" />
             </font></Button>
-         <Button layoutX="100.0" layoutY="166.0" mnemonicParsing="false" onMouseClicked="#myinfo" prefHeight="38.0" prefWidth="175.0" style="-fx-background-color: transparent;" text="M y  i n f o r m a t i o n">
+         <Button layoutX="100.0" layoutY="166.0" mnemonicParsing="false" onMouseClicked="#myinfo" prefHeight="38.0" prefWidth="175.0" style="-fx-background-color: transparent;" text="My information">
             <font>
                <Font size="14.0" />
             </font>
@@ -36,7 +36,7 @@
                <Cursor fx:constant="HAND" />
             </cursor>
          </Button>
-         <Button layoutX="78.0" layoutY="227.0" mnemonicParsing="false" onMouseClicked="#contactR" prefHeight="36.0" prefWidth="218.0" style="-fx-background-color: transparent;" text="C o n t a c t  r e s p o n s i b l e">
+         <Button layoutX="78.0" layoutY="227.0" mnemonicParsing="false" onMouseClicked="#contactR" prefHeight="36.0" prefWidth="218.0" style="-fx-background-color: transparent;" text="Contact  responsible">
             <font>
                <Font size="14.0" />
             </font>
@@ -45,7 +45,7 @@
             </cursor>
          </Button>
          <Line endX="100.0" layoutX="464.0" layoutY="104.0" startX="-100.0" />
-         <Label layoutX="363.0" layoutY="69.0" prefHeight="35.0" prefWidth="178.0" text="U p c o m i n g  s h i f t s :">
+         <Label layoutX="363.0" layoutY="69.0" prefHeight="35.0" prefWidth="178.0" text="Upcoming shifts :">
             <font>
                <Font size="14.0" />
             </font>

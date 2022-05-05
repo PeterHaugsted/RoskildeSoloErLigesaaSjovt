@@ -5,9 +5,6 @@ import javafx.scene.control.TextField;
 import javafx.scene.input.MouseEvent;
 import javafx.scene.paint.Color;
 
-import java.io.BufferedReader;
-import java.io.File;
-import java.io.FileReader;
 import java.io.IOException;
 
 
@@ -15,10 +12,10 @@ public class LogInRController implements AppContact {
 
 
     @FXML
-    private APPHANDLER app;
+    private AppHandler app;
 
     @FXML
-    public void setApp(APPHANDLER apphandler) {
+    public void setApp(AppHandler apphandler) {
         this.app = apphandler;
     }
 

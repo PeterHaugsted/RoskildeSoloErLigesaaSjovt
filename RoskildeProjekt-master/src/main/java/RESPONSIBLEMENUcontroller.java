@@ -8,11 +8,11 @@ public class RESPONSIBLEMENUcontroller extends LogInRController implements AppCo
 
 
     @FXML
-    private APPHANDLER app;
+    private AppHandler app;
 
     @FXML
     @Override
-    public void setApp(APPHANDLER apphandler) {
+    public void setApp(AppHandler apphandler) {
         this.app = apphandler;
     }
 

@@ -12,10 +12,10 @@ public class EDITVController implements AppContact {
 
 
     @FXML
-    private APPHANDLER app;
+    private AppHandler app;
 
     @Override
-    public void setApp(APPHANDLER apphandler) {
+    public void setApp(AppHandler apphandler) {
         this.app = apphandler;
     }
 

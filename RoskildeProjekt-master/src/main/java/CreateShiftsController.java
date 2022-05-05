@@ -7,8 +7,6 @@ import javafx.scene.input.MouseEvent;
 import java.io.*;
 import java.time.LocalDate;
 import java.time.format.DateTimeFormatter;
-import java.util.Date;
-import java.util.Scanner;
 
 import static javafx.scene.paint.Color.GREEN;
 import static javafx.scene.paint.Color.RED;
@@ -18,10 +16,10 @@ public class CreateShiftsController implements AppContact {
     //Here is where a responsible would create a shift
 
     @FXML
-    private APPHANDLER app;
+    private AppHandler app;
 
     @Override
-    public void setApp(APPHANDLER app) {
+    public void setApp(AppHandler app) {
         this.app = app;
     }
 

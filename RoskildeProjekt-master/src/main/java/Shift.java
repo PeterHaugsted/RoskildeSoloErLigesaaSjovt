@@ -16,6 +16,21 @@ public class Shift implements Serializable {
         return user;
     }
 
+    public void setUser(User user) {
+        this.user = user;
+        
+    }
+
+    public String getVolunteer() {
+        return volunteer;
+        
+    }
+
+    public void setVolunteer(String v) {
+        this.volunteer = v;
+        
+    }
+
     public Shift(String date, String task, String time, User user) {
         this.date = date;
         this.task = task;

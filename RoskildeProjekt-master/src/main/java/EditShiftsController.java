@@ -5,7 +5,6 @@ import javafx.scene.control.TableColumn;
 import javafx.scene.control.TableView;
 import javafx.scene.control.TextField;
 import javafx.scene.control.cell.PropertyValueFactory;
-import javafx.scene.control.cell.TextFieldTableCell;
 import javafx.scene.input.MouseEvent;
 
 
@@ -14,10 +13,10 @@ import java.io.IOException;
 public class EditShiftsController implements AppContact {
 
     @Override
-    public void setApp(APPHANDLER app) {
+    public void setApp(AppHandler app) {
         this.app = app;
-        ObservableList<Shift> List = FXCollections.observableArrayList(Database.getOBSShift());
-        name.setCellValueFactory(new PropertyValueFactory("name"));
+        ObservableList<Shift> list = FXCollections.observableArrayList(Database.getOBSShift());
+        name.setCellValueFactory(new PropertyValueFactory("volunteer"));
         date.setCellValueFactory(new PropertyValueFactory("date"));
         task.setCellValueFactory(new PropertyValueFactory("task"));
         time.setCellValueFactory(new PropertyValueFactory("time"));
@@ -25,7 +24,7 @@ public class EditShiftsController implements AppContact {
         }
 
     @FXML
-    public APPHANDLER app;
+    public AppHandler app;
 
     @FXML
     public TableView<Shift> table;
@@ -52,7 +51,7 @@ public class EditShiftsController implements AppContact {
         app.logout1();
     }
 
-    public void List(APPHANDLER app, ObservableList observableList) {
+    public void List(AppHandler app, ObservableList observableList) {
 
     }
 

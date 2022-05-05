@@ -1,24 +1,19 @@
 import javafx.event.ActionEvent;
 import javafx.fxml.FXML;
 import javafx.scene.control.Label;
-import javafx.scene.control.MenuButton;
 import javafx.scene.input.MouseEvent;
 
-import java.io.BufferedReader;
-import java.io.File;
-import java.io.FileReader;
 import java.io.IOException;
 import java.util.ArrayList;
-import java.util.StringTokenizer;
 
 public class VOLUNTEERMENUcontroller implements AppContact {
 
 
     @FXML
-    private APPHANDLER app;
+    private AppHandler app;
 
     @Override
-    public void setApp(APPHANDLER apphandler) {
+    public void setApp(AppHandler apphandler) {
         this.app = apphandler;
     }
 
