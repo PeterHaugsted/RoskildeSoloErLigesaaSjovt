@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<Scene xmlns="http://javafx.com/javafx/16" xmlns:fx="http://javafx.com/fxml/1" fx:controller="ForsideController">
+    <AnchorPane prefHeight="400.0" prefWidth="600.0">
+        <style> -fx-background-image: url("https://meyersound.com/wp-content/uploads/2017/09/roskilde_festival_008.jpg");
+            -fx-background-size: cover, auto;
+        </style>
+
+        <children>
+            <Label alignment="CENTER" contentDisplay="CENTER" layoutX="221.0" layoutY="156.0" prefHeight="54.0" prefWidth="170.0" text="Log in as" textFill="WHITE">
+                <font>
+                    <Font size="36.0" />
+                </font>
+            <cursor>
+               <Cursor fx:constant="DEFAULT" />
+            </cursor>
+            </Label>
+            <Button alignment="CENTER" blendMode="SRC_ATOP" layoutX="192.0" layoutY="214.0" mnemonicParsing="false" onMouseClicked="#LogInR" prefHeight="54.0" prefWidth="245.0" style="-fx-background-color: transparent;" text="R e s p o n s i b l e " textAlignment="CENTER" textFill="WHITE" textOverrun="CENTER_ELLIPSIS">
+                <font>
+                    <Font name="System Bold" size="24.0" />
+                </font>
+            <cursor>
+               <Cursor fx:constant="HAND" />
+            </cursor></Button>
+            <Button layoutX="204.0" layoutY="258.0" mnemonicParsing="false" onMouseClicked="#LogInV" prefHeight="63.0" prefWidth="207.0" style="-fx-background-color: transparent;" text="V o l u n t e e r" textFill="WHITE" textOverrun="CLIP">
+                <font>
+                    <Font name="System Bold Italic" size="24.0" />
+                </font>
+            <cursor>
+               <Cursor fx:constant="HAND" />
+            </cursor></Button>
+         <TextFlow prefHeight="200.0" prefWidth="200.0" />
+         <ImageView fitHeight="130.0" fitWidth="233.0" layoutX="185.0" layoutY="39.0" pickOnBounds="true" preserveRatio="true">
+            <image>
+               <Image url="@WW_explore_collab_wide_Roskilde_desktop.png" />
+            </image>
+         </ImageView>
+         <ImageView fitHeight="64.0" fitWidth="115.0" layoutX="14.0" layoutY="333.0" pickOnBounds="true" preserveRatio="true">
+            <image>
+               <Image url="@foreningen_orange.png" />
+            </image>
+         </ImageView>
+
+
+        </children></AnchorPane>
+</Scene>

@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<Scene xmlns="http://javafx.com/javafx/16" xmlns:fx="http://javafx.com/fxml/1" fx:controller="CreateShiftsController">
+<AnchorPane prefHeight="400.0" prefWidth="600.0">
+    <style> -fx-background-image: url("https://browsecat.net/sites/default/files/orange-background-hd-126457-577970-1988082.png");
+        -fx-background-size: cover, auto;
+    </style>
+    <children>
+        <Label layoutX="14.0" layoutY="14.0" prefHeight="26.0" prefWidth="263.0" text="L o g g e d  i n  a s :  R e s p o n s i b l e">
+            <font>
+                <Font size="14.0" />
+            </font>
+        </Label>
+        <Button layoutX="528.0" layoutY="27.0" mnemonicParsing="false" onMouseClicked="#logout" style="-fx-background-color: transparent;" text="Log out" />
+         <Label layoutX="40.0" layoutY="122.0" prefHeight="34.0" prefWidth="106.0" text="Create shift for:">
+            <font>
+               <Font size="14.0" />
+            </font>
+         </Label>
+         <DatePicker fx:id="date" layoutX="201.0" layoutY="187.0" prefHeight="29.0" prefWidth="192.0" />
+         <Label layoutX="38.0" layoutY="190.0" prefHeight="18.0" prefWidth="100.0" text="Pick date:">
+            <font>
+               <Font size="14.0" />
+            </font>
+         </Label>
+         <Label layoutX="36.0" layoutY="290.0" prefHeight="27.0" prefWidth="104.0" text="Choose Hours: ">
+            <font>
+               <Font size="14.0" />
+            </font>
+         </Label>
+         <TextField fx:id="hours" alignment="CENTER" layoutX="201.0" layoutY="289.0" prefHeight="26.0" prefWidth="183.0" text="00:00-00:00">
+            <font>
+               <Font size="14.0" />
+            </font>
+         </TextField>
+        <Button layoutX="14.0" layoutY="40.0" mnemonicParsing="false" onMouseClicked="#GoBackMenuR" style="-fx-background-color: transparent;" text="←">
+            <font>
+                <Font name="System Bold" size="12.0" />
+            </font>
+        </Button>
+         <Button layoutX="200.0" layoutY="329.0" mnemonicParsing="false" onMouseClicked="#submitS" prefHeight="26.0" prefWidth="185.0" style="-fx-background-color: transparent;" text="Submit" />
+         <Label layoutX="36.0" layoutY="241.0" prefHeight="18.0" prefWidth="90.0" text="Task:">
+            <font>
+               <Font size="14.0" />
+            </font>
+         </Label>
+         <TextField fx:id="task" layoutX="201.0" layoutY="238.0" prefHeight="30.0" prefWidth="183.0" />
+         <TextField fx:id="fullname" layoutX="202.0" layoutY="127.0" prefHeight="30.0" prefWidth="185.0" promptText="Full Name" />
+         <Button layoutX="401.0" layoutY="128.0" mnemonicParsing="false" onMouseClicked="#confirm" style="-fx-background-color: 0;" text="Confirm" />
+         <Label fx:id="foundor" layoutX="200.0" layoutY="156.0" prefHeight="18.0" prefWidth="170.0" text="">
+            <font>
+               <Font size="10.0" />
+            </font>
+         </Label>
+         <Label fx:id="succesfully" layoutX="200.0" layoutY="368.0" prefHeight="18.0" prefWidth="186.0" text="" textFill="#00ff09" />
+    </children></AnchorPane>
+
+</Scene>

@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.shape.*?>
+<?import javafx.scene.text.*?>
+
+<Scene xmlns="http://javafx.com/javafx/16" xmlns:fx="http://javafx.com/fxml/1" fx:controller="CreateVController">
+<AnchorPane prefHeight="400.0" prefWidth="600.0">
+    <style> -fx-background-image: url("https://browsecat.net/sites/default/files/orange-background-hd-126457-577970-1988082.png");
+        -fx-background-size: cover, auto;
+    </style>
+    <children>
+        <Label layoutX="14.0" layoutY="14.0" prefHeight="26.0" prefWidth="233.0" text="L o g g e d  i n  a s :  R e s p o n s i b l e">
+            <font>
+                <Font size="14.0" />
+            </font>
+        </Label>
+        <Button layoutX="508.0" layoutY="2.0" mnemonicParsing="false" onMouseClicked="#logout" prefHeight="25.0" prefWidth="93.0" style="-fx-background-color: transparent;" text="L o g   o u t" />
+         <Button layoutX="14.0" layoutY="40.0" mnemonicParsing="false" onMouseClicked="#GoBackMenuR" style="-fx-background-color: transparent;" text="←">
+            <font>
+               <Font name="System Bold" size="12.0" />
+            </font>
+            <cursor>
+               <Cursor fx:constant="HAND" />
+            </cursor>
+         </Button>
+         <Line endX="117.79998779296875" layoutX="159.0" layoutY="134.0" startX="-100.0" />
+         <Label layoutX="58.0" layoutY="104.0" prefHeight="30.0" prefWidth="191.0" text="Cr e a t e  a  V o l u n t e e r : ">
+            <font>
+               <Font size="15.0" />
+            </font>
+         </Label>
+         <Label layoutX="58.0" layoutY="149.0" prefHeight="30.0" prefWidth="51.0" text="N a m e :">
+            <font>
+               <Font size="14.0" />
+            </font>
+         </Label>
+         <TextField fx:id="name" layoutX="139.0" layoutY="153.0">
+            <cursor>
+               <Cursor fx:constant="TEXT" />
+            </cursor></TextField>
+         <Label layoutX="58.0" layoutY="188.0" prefHeight="30.0" prefWidth="81.0" text="E m a i l :">
+            <font>
+               <Font size="14.0" />
+            </font>
+         </Label>
+         <TextField fx:id="email" layoutX="139.0" layoutY="191.0">
+            <cursor>
+               <Cursor fx:constant="TEXT" />
+            </cursor></TextField>
+         <Label layoutX="58.0" layoutY="221.0" prefHeight="31.0" prefWidth="80.0" text="P h o n e  n r :">
+            <font>
+               <Font size="14.0" />
+            </font>
+         </Label>
+         <TextField fx:id="phonenr" layoutX="139.0" layoutY="224.0">
+            <cursor>
+               <Cursor fx:constant="TEXT" />
+            </cursor></TextField>
+         <Label layoutX="58.0" layoutY="256.0" prefHeight="28.0" prefWidth="81.0" text="A d d r e s s :">
+            <font>
+               <Font size="14.0" />
+            </font>
+         </Label>
+         <TextField fx:id="address" layoutX="139.0" layoutY="258.0">
+            <cursor>
+               <Cursor fx:constant="TEXT" />
+            </cursor></TextField>
+         <Button layoutX="133.0" layoutY="297.0" mnemonicParsing="false" onMouseClicked="#submit" prefHeight="26.0" prefWidth="152.0" style="-fx-background-color: transparent;" text="S u b m i t">
+            <font>
+               <Font size="14.0" />
+            </font>
+         </Button>
+         <Label fx:id="missing" layoutX="133.0" layoutY="343.0" prefHeight="18.0" prefWidth="200.0" style="-fx-text-fill: RED">
+            <font>
+               <Font size="14.0" />
+            </font>
+         </Label>
+         <Label fx:id="auto" layoutX="325.0" layoutY="145.0" prefHeight="18.0" prefWidth="200.0" text="">
+            <font>
+               <Font size="14.0" />
+            </font></Label>
+        <Label fx:id="password" layoutX="325.0" layoutY="165.0" prefHeight="18.0" prefWidth="200.0" text="">
+            <font>
+               <Font size="14.0" />
+            </font></Label>
+    </children>
+</AnchorPane>
+
+</Scene>

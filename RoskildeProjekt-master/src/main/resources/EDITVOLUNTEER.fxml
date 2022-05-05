@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.shape.*?>
+<?import javafx.scene.text.*?>
+
+<Scene xmlns="http://javafx.com/javafx/16" xmlns:fx="http://javafx.com/fxml/1" fx:controller="EDITVController">
+<AnchorPane prefHeight="400.0" prefWidth="600.0">
+    <style> -fx-background-image: url("https://browsecat.net/sites/default/files/orange-background-hd-126457-577970-1988082.png");
+        -fx-background-size: cover, auto;
+    </style>
+      <children>
+          <Label layoutX="14.0" layoutY="14.0" prefHeight="26.0" prefWidth="261.0" text="L o g g e d  i n  a s :  R e s p o n s i b l e">
+              <font>
+                  <Font size="14.0" />
+              </font>
+          </Label>
+          <Button layoutX="529.0" layoutY="2.0" mnemonicParsing="false" onMouseClicked="#logout" style="-fx-background-color: transparent;" text="L o g  o u t">
+            <cursor>
+               <Cursor fx:constant="HAND" />
+            </cursor></Button>
+          <Button layoutX="14.0" layoutY="40.0" mnemonicParsing="false" onMouseClicked="#GoBackMenuR" style="-fx-background-color: transparent;" text="←">
+              <font>
+                  <Font name="System Bold" size="12.0" />
+              </font>
+            <cursor>
+               <Cursor fx:constant="HAND" />
+            </cursor>
+          </Button>
+         <Line endX="100.0" layoutX="159.0" layoutY="107.0" startX="-100.0" />
+         <Label layoutX="60.0" layoutY="77.0" prefHeight="39.0" prefWidth="198.0" text="E d i t  a  V o l u n t e e r :">
+            <font>
+               <Font size="14.0" />
+            </font>
+         </Label>
+         <Label layoutX="15.0" layoutY="126.0" prefHeight="20.0" prefWidth="216.0" text="S e a r c h  f o r  V o l u n t e e r :">
+            <font>
+               <Font size="14.0" />
+            </font>
+         </Label>
+         <TextField fx:id="fullname" layoutX="240.0" layoutY="123.0" promptText="Full Name">
+            <cursor>
+               <Cursor fx:constant="TEXT" />
+            </cursor></TextField>
+         <Button layoutX="406.0" layoutY="123.0" mnemonicParsing="false" onMouseClicked="#search" style="-fx-background-color: transparent;" text="S e a r c h">
+            <cursor>
+               <Cursor fx:constant="HAND" />
+            </cursor></Button>
+         <TextField fx:id="email" layoutX="56.0" layoutY="180.0" prefHeight="26.0" prefWidth="175.0" promptText="Email">
+            <cursor>
+               <Cursor fx:constant="TEXT" />
+            </cursor></TextField>
+         <TextField fx:id="phonenr" layoutX="57.0" layoutY="217.0" prefHeight="26.0" prefWidth="176.0" promptText="Phone nr">
+            <cursor>
+               <Cursor fx:constant="TEXT" />
+            </cursor></TextField>
+         <TextField fx:id="address" layoutX="57.0" layoutY="254.0" prefHeight="26.0" prefWidth="175.0" promptText="Address">
+            <cursor>
+               <Cursor fx:constant="TEXT" />
+            </cursor></TextField>
+         <Button layoutX="57.0" layoutY="300.0" mnemonicParsing="false" onMouseClicked="#save" prefHeight="26.0" prefWidth="174.0" style="-fx-background-color: transparent;" text="S a v e  C h a n g e s">
+            <cursor>
+               <Cursor fx:constant="HAND" />
+            </cursor></Button>
+         <Button layoutX="60.0" layoutY="336.0" mnemonicParsing="false" onMouseClicked="#delete" prefHeight="26.0" prefWidth="170.0" style="-fx-background-color: transparent;" text="D e l e t e  V o l u n t e e r" textFill="RED">
+            <cursor>
+               <Cursor fx:constant="HAND" />
+            </cursor></Button>
+         <Label fx:id="notfound" layoutX="205.0" layoutY="155.0" prefHeight="18.0" prefWidth="150.0" />
+         <Label fx:id="changedS" layoutX="280.0" layoutY="305.0" prefHeight="20.0" prefWidth="285.0" text="">
+            <font>
+               <Font size="14.0" />
+            </font>
+         </Label>
+         <Button fx:id="areyousure" layoutX="240.0" layoutY="337.0" mnemonicParsing="false" onMouseClicked="#SLET" prefHeight="26.0" prefWidth="262.0" text="Are you sure you want to delete this Person?" textFill="RED" visible="false" />
+      </children></AnchorPane>
+</Scene>

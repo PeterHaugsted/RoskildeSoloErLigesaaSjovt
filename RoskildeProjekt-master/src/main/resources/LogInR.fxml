@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<Scene xmlns="http://javafx.com/javafx/16" xmlns:fx="http://javafx.com/fxml/1" fx:controller="LogInRController">
+    <AnchorPane prefHeight="400.0" prefWidth="600.0">
+        <style> -fx-background-image: url("https://roskildefestivalgruppen.dk/media/1078/kim-matthai-leland_omos_breaker_1.jpg?width=2048");
+            -fx-background-size: cover, auto;
+        </style>
+        <children>
+            <Label fx:id="login" alignment="CENTER" layoutX="-1.0" layoutY="104.0" prefHeight="47.0" prefWidth="601.0" text="Log in" textFill="WHITE">
+                <font>
+                    <Font size="38.0" />
+                </font>
+            </Label>
+            <Label layoutX="133.0" layoutY="186.0" text="Username" textFill="WHITE">
+                <font>
+                    <Font size="18.0" />
+                </font>
+            </Label>
+            <Label layoutX="135.0" layoutY="221.0" text="Password" textFill="WHITE">
+                <font>
+                    <Font size="18.0" />
+                </font>
+            </Label>
+            <TextField fx:id="username" layoutX="255.0" layoutY="187.0">
+            <cursor>
+               <Cursor fx:constant="TEXT" />
+            </cursor></TextField>
+            <PasswordField fx:id="password" layoutX="255.0" layoutY="222.0">
+            <cursor>
+               <Cursor fx:constant="TEXT" />
+            </cursor></PasswordField>
+            <Button layoutX="255.0" layoutY="259.0" mnemonicParsing="false" onMouseClicked="#logininfo" prefHeight="25.0" prefWidth="149.0" style="-fx-background-color: transparent;" text="Log in" textFill="#fff4f4">
+            <font>
+               <Font name="DejaVu Sans Bold" size="17.0" />
+            </font>
+            <cursor>
+               <Cursor fx:constant="HAND" />
+            </cursor></Button>
+         <Button layoutX="-18.0" mnemonicParsing="false" onMouseClicked="#back" prefHeight="51.0" prefWidth="83.0" style="-fx-background-color: transparent;" text="←" textFill="WHITE">
+            <font>
+               <Font name="System Bold" size="24.0" />
+            </font>
+            <cursor>
+               <Cursor fx:constant="HAND" />
+            </cursor></Button>
+         <ImageView fitHeight="59.0" fitWidth="112.0" layoutX="14.0" layoutY="333.0" pickOnBounds="true" preserveRatio="true">
+            <image>
+               <Image url="@foreningen_orange.png" />
+            </image>
+         </ImageView>
+
+        </children>
+    </AnchorPane>
+</Scene>
