@@ -10,14 +10,14 @@ import java.util.Random;
 
 import static javafx.scene.paint.Color.GREEN;
 
-public class CreateVController implements AppContact {
+public class createVController implements appContact {
     //This is where I create a volunteer
 
     @FXML
-    private AppHandler app;
+    private appHandler app;
 
     @Override
-    public void setApp(AppHandler apphandler) {
+    public void setApp(appHandler apphandler) {
         this.app = apphandler;
     }
 

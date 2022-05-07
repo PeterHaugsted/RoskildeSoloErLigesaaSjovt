@@ -6,7 +6,7 @@ import javafx.stage.Stage;
 import java.io.IOException;
 
 
-public class AppHandler extends Application {
+public class appHandler extends Application {
     //I handle the apps, starting scenes changing scenes and to which.
 
     Scene sceneStart;
@@ -15,9 +15,9 @@ public class AppHandler extends Application {
     @Override
     public void start(Stage stage) throws Exception {
         Database.loadVolunteerDataFromFileToUsers();
-        FXMLLoader fxmlLoader = new FXMLLoader(AppHandler.class.getResource("/Forside.fxml"));
+        FXMLLoader fxmlLoader = new FXMLLoader(appHandler.class.getResource("/Forside.fxml"));
         sceneStart = fxmlLoader.load();
-        ForsideController controllerstart = fxmlLoader.getController();
+        forsideController controllerstart = fxmlLoader.getController();
         controllerstart.setApp(this);
         stage.setScene(sceneStart);
         stage.show();
@@ -28,7 +28,7 @@ public class AppHandler extends Application {
     public void changescnen(String gui) throws IOException {
         FXMLLoader loader = new FXMLLoader(getClass().getResource(gui));
         Scene load = loader.load();
-        AppContact controller = (AppContact) loader.getController();
+        appContact controller = (appContact) loader.getController();
         controller.setApp(this);
         stageStart.setScene(load);
     }
@@ -101,7 +101,7 @@ public class AppHandler extends Application {
         changescnen("contactR.fxml");
     }
 
-    public void ChangePass() throws IOException{
+    public void ChangePass() throws IOException {
         changescnen("ChangePass.fxml");
     }
 }

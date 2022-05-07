@@ -52,15 +52,15 @@ public class Database {
         return true;
     }
 
-    public static boolean addV(User user){
+    public static boolean addV(User user) {
         users.add(user);
         saveVToFile();
         return true;
     }
 
-    public static User getUserFromName(String name){
+    public static User getUserFromName(String name) {
         for (int i = 0; i < users.size(); i++) {
-            if(users.get(i).getName().equals(name)){
+            if (users.get(i).getName().equals(name)) {
                 return users.get(i);
             }
         }
@@ -68,9 +68,9 @@ public class Database {
         return null;
     }
 
-    public static boolean removePerson(User user){
+    public static boolean removePerson(User user) {
         for (int i = 0; i < users.size(); i++) {
-            if (user == users.get(i)){
+            if (user == users.get(i)) {
                 users.remove(i);
                 saveVToFile();
                 return true;
@@ -79,7 +79,7 @@ public class Database {
         return false;
     }
 
-    private static void loadNew(){
+    private static void loadNew() {
 
         User user = new User("test", "peterhaugsted@hotmail.com", "31105068", "Skodsborgvej 190", "12");
         user.setResponsible(true);
@@ -90,7 +90,7 @@ public class Database {
         users.add(user);
     }
 
-    public static ObservableList<Shift> getOBSShift(){
+    public static ObservableList<Shift> getOBSShift() {
         ArrayList<Shift> allShifts = new ArrayList<>();
         for (int i = 0; i < users.size(); i++) {
             for (int j = 0; j < users.get(i).getShifts().size(); j++) {

@@ -6,14 +6,14 @@ import javafx.scene.input.MouseEvent;
 import java.io.IOException;
 import java.util.ArrayList;
 
-public class VOLUNTEERMENUcontroller implements AppContact {
+public class volunteerMenuController implements appContact {
 
 
     @FXML
-    private AppHandler app;
+    private appHandler app;
 
     @Override
-    public void setApp(AppHandler apphandler) {
+    public void setApp(appHandler apphandler) {
         this.app = apphandler;
     }
 
@@ -35,10 +35,10 @@ public class VOLUNTEERMENUcontroller implements AppContact {
     public Label shift3;
 
     public void show1(ActionEvent actionEvent) throws IOException {
-        //String username1 = LogInVController.usernameuse;
-        User user = Database.getUserFromName(LogInVController.usernameuse);
+        //String username1 = logInVController.usernameuse;
+        User user = Database.getUserFromName(logInVController.usernameuse);
         Shift shift = user.getNextShift();
-        if (shift != null){
+        if (shift != null) {
             shifts.setText("");
             shift2.setText("");
             shift3.setText("");
@@ -53,9 +53,9 @@ public class VOLUNTEERMENUcontroller implements AppContact {
         shifts.setText("");
         shift2.setText("");
         shift3.setText("");
-        User user = Database.getUserFromName(LogInVController.usernameuse);
+        User user = Database.getUserFromName(logInVController.usernameuse);
         ArrayList<Shift> moreShifts = user.getNext3Shifts();
-        switch (moreShifts.size()){
+        switch (moreShifts.size()) {
             case 0:
                 shifts.setText("No occurring shift");
                 break;

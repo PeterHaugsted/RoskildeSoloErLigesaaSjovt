@@ -10,10 +10,10 @@ import javafx.scene.input.MouseEvent;
 
 import java.io.IOException;
 
-public class EditShiftsController implements AppContact {
+public class editShiftsController implements appContact {
 
     @Override
-    public void setApp(AppHandler app) {
+    public void setApp(appHandler app) {
         this.app = app;
         ObservableList<Shift> list = FXCollections.observableArrayList(Database.getOBSShift());
         name.setCellValueFactory(new PropertyValueFactory("volunteer"));
@@ -24,7 +24,7 @@ public class EditShiftsController implements AppContact {
         }
 
     @FXML
-    public AppHandler app;
+    public appHandler app;
 
     @FXML
     public TableView<Shift> table;
@@ -51,7 +51,7 @@ public class EditShiftsController implements AppContact {
         app.logout1();
     }
 
-    public void List(AppHandler app, ObservableList observableList) {
+    public void List(appHandler app, ObservableList observableList) {
 
     }
 

@@ -10,7 +10,7 @@
 <?import javafx.scene.shape.Line?>
 <?import javafx.scene.text.Font?>
 
-<Scene xmlns="http://javafx.com/javafx/17" xmlns:fx="http://javafx.com/fxml/1" fx:controller="VOLUNTEERMENUcontroller">
+<Scene xmlns="http://javafx.com/javafx/17" xmlns:fx="http://javafx.com/fxml/1" fx:controller="volunteerMenuController">
 <AnchorPane prefHeight="400.0" prefWidth="600.0">
     <style> -fx-background-image: url("https://browsecat.net/sites/default/files/orange-background-hd-126457-577970-1988082.png");
         -fx-background-size: cover, auto;

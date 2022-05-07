@@ -4,15 +4,15 @@ import javafx.scene.input.MouseEvent;
 import java.io.IOException;
 
 
-public class RESPONSIBLEMENUcontroller extends LogInRController implements AppContact {
+public class responsibleMenuController extends logInRController implements appContact {
 
 
     @FXML
-    private AppHandler app;
+    private appHandler app;
 
     @FXML
     @Override
-    public void setApp(AppHandler apphandler) {
+    public void setApp(appHandler apphandler) {
         this.app = apphandler;
     }
 

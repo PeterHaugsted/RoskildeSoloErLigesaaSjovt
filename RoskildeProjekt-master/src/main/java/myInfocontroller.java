@@ -5,17 +5,16 @@ import javafx.scene.input.MouseEvent;
 import java.io.IOException;
 
 
-public class MyInfocontroller implements AppContact {
+public class myInfocontroller implements appContact {
 
 
     @FXML
-    private AppHandler app;
+    private appHandler app;
 
     @Override
-    public void setApp(AppHandler apphandler) {
+    public void setApp(appHandler apphandler) {
         this.app = apphandler;
     }
-
 
 
     public void logout(MouseEvent mouseEvent) throws IOException {
@@ -32,7 +31,7 @@ public class MyInfocontroller implements AppContact {
 
 
     public void show(MouseEvent mouseEvent) throws IOException {
-        String username1 = LogInVController.usernameuse;
+        String username1 = logInVController.usernameuse;
         User user = Database.getUserFromName(username1);
         if (user != null) {
             email.setText(user.geteMail());

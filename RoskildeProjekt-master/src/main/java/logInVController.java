@@ -7,32 +7,35 @@ import javafx.scene.paint.Color;
 
 import java.io.IOException;
 
-
-public class LogInRController implements AppContact {
-
+public class logInVController implements appContact {
 
     @FXML
-    private AppHandler app;
+    private appHandler app;
 
-    @FXML
-    public void setApp(AppHandler apphandler) {
+    @Override
+    public void setApp(appHandler apphandler) {
         this.app = apphandler;
     }
 
-
     public TextField username;
     public PasswordField password;
-    public static String usernameuse;
     public Label login;
+    public static String usernameuse;
+
+
+    public void back(MouseEvent mouseEvent) throws IOException {
+        app.GoBackToChooseRorV();
+    }
+
 
     public void logininfo(MouseEvent mouseEvent) throws IOException {
         String passworduse = password.getText();
         usernameuse = username.getText();
 
         User user = Database.getUserFromName(usernameuse);
-        if (user != null && user.isResponsible()){
+        if (user != null && !user.isResponsible()){
             if (user.getPassword().equals(passworduse)){
-                app.OpenStartR();
+                app.OpenStartV();
             }
             login.setText("Wrong username or password");
             login.setTextFill(Color.web("#FF0000"));
@@ -41,7 +44,7 @@ public class LogInRController implements AppContact {
         login.setTextFill(Color.web("#FF0000"));
     }
 
-    public void back(MouseEvent mouseEvent) throws IOException {
-        app.GoBackToChooseRorV();
-    }
 }
+
+
+

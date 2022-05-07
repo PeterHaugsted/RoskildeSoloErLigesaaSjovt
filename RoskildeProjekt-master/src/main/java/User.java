@@ -91,13 +91,13 @@ public class User implements Serializable {
         return nextShift;
     }
 
-    public ArrayList<Shift> getNext3Shifts(){
+    public ArrayList<Shift> getNext3Shifts() {
         ArrayList<Shift> moreShifts = new ArrayList<>();
         try {
             int n = 3;
             for (int i = 0; i < n; i++) {
                 if (shifts.get(i) != null) {
-                    if (shifts.get(i).millsFromNow() != -1){
+                    if (shifts.get(i).millsFromNow() != -1) {
                         moreShifts.add(shifts.get(i));
                     } else {
                         n++;
@@ -106,13 +106,13 @@ public class User implements Serializable {
                     break;
                 }
             }
-        } catch (Exception e){
+        } catch (Exception e) {
 
         }
         return moreShifts;
     }
 
-    public boolean addShift(Shift shift){
+    public boolean addShift(Shift shift) {
         shifts.add(shift);
         Collections.sort(shifts, new shiftComparable());
         return Database.saveVToFile();

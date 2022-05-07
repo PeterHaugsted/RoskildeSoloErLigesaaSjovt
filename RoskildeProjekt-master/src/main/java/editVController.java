@@ -8,14 +8,14 @@ import java.io.*;
 
 import static javafx.scene.paint.Color.*;
 
-public class EDITVController implements AppContact {
+public class editVController implements appContact {
 
 
     @FXML
-    private AppHandler app;
+    private appHandler app;
 
     @Override
-    public void setApp(AppHandler apphandler) {
+    public void setApp(appHandler apphandler) {
         this.app = apphandler;
     }
 
@@ -80,8 +80,6 @@ public class EDITVController implements AppContact {
             changedS.setText("Person not found, ERROR");
             changedS.setTextFill(RED);
         }
-
-
 
 
     }

@@ -12,14 +12,14 @@ import static javafx.scene.paint.Color.GREEN;
 import static javafx.scene.paint.Color.RED;
 
 
-public class CreateShiftsController implements AppContact {
+public class createShiftsController implements appContact {
     //Here is where a responsible would create a shift
 
     @FXML
-    private AppHandler app;
+    private appHandler app;
 
     @Override
-    public void setApp(AppHandler app) {
+    public void setApp(appHandler app) {
         this.app = app;
     }
 
@@ -36,13 +36,12 @@ public class CreateShiftsController implements AppContact {
     public DatePicker date;
     public TextField hours;
     public TextField task;
-    public Label succesfully;
+    public Label successfully;
 
     public void confirm(MouseEvent mouseEvent) throws IOException {
 
 
         String name = fullname.getText();
-
 
 
         User user = Database.getUserFromName(name);
@@ -72,11 +71,11 @@ public class CreateShiftsController implements AppContact {
 
         User user = Database.getUserFromName(name);
         if (user == null) {
-            succesfully.setText("User not found");
+            successfully.setText("User not found");
         } else {
             Shift shift = new Shift(dato.format(DateTimeFormatter.ofPattern("yyyy-MM-dd")), task1, timer, user);
             user.addShift(shift);
-            succesfully.setText("Shift added");
+            successfully.setText("Shift added");
             //The date is set up with the "DateTimeFormatter" whereas I set the pattern to specifically be Year, month, date
         }
     }

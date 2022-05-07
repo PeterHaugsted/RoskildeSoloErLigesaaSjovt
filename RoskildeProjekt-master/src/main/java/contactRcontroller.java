@@ -5,15 +5,15 @@ import javafx.scene.input.MouseEvent;
 
 import java.io.IOException;
 
-public class ContactRcontroller implements AppContact {
+public class contactRcontroller implements appContact {
     //This function is for when a volunteer has problems, and need to contact a responsible
 
 
     @FXML
-    private AppHandler app;
+    private appHandler app;
 
     @Override
-    public void setApp(AppHandler apphandler) {
+    public void setApp(appHandler apphandler) {
         this.app = apphandler;
     }
 
@@ -35,7 +35,7 @@ public class ContactRcontroller implements AppContact {
         //This is the search function integrated with the database
         String name = responsibleName.getText();
         User user = Database.getUserFromName(name);
-        if (user != null){
+        if (user != null) {
             responsiblemail.setText(user.geteMail());
             responsiblenumber.setText(user.getTlfNr());
         } else {

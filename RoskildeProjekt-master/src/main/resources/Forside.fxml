@@ -6,7 +6,7 @@
 <?import javafx.scene.layout.*?>
 <?import javafx.scene.text.*?>
 
-<Scene xmlns="http://javafx.com/javafx/16" xmlns:fx="http://javafx.com/fxml/1" fx:controller="ForsideController">
+<Scene xmlns="http://javafx.com/javafx/16" xmlns:fx="http://javafx.com/fxml/1" fx:controller="forsideController">
     <AnchorPane prefHeight="400.0" prefWidth="600.0">
         <style> -fx-background-image: url("https://meyersound.com/wp-content/uploads/2017/09/roskilde_festival_008.jpg");
             -fx-background-size: cover, auto;

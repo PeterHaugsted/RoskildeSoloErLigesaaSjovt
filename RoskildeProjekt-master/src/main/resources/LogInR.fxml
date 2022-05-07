@@ -6,7 +6,7 @@
 <?import javafx.scene.layout.*?>
 <?import javafx.scene.text.*?>
 
-<Scene xmlns="http://javafx.com/javafx/16" xmlns:fx="http://javafx.com/fxml/1" fx:controller="LogInRController">
+<Scene xmlns="http://javafx.com/javafx/16" xmlns:fx="http://javafx.com/fxml/1" fx:controller="logInRController">
     <AnchorPane prefHeight="400.0" prefWidth="600.0">
         <style> -fx-background-image: url("https://roskildefestivalgruppen.dk/media/1078/kim-matthai-leland_omos_breaker_1.jpg?width=2048");
             -fx-background-size: cover, auto;

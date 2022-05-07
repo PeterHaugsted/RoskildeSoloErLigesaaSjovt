@@ -18,17 +18,17 @@ public class Shift implements Serializable {
 
     public void setUser(User user) {
         this.user = user;
-        
+
     }
 
     public String getVolunteer() {
         return volunteer;
-        
+
     }
 
     public void setVolunteer(String v) {
         this.volunteer = v;
-        
+
     }
 
     public Shift(String date, String task, String time, User user) {
@@ -69,7 +69,7 @@ public class Shift implements Serializable {
         int hh = Integer.parseInt(time.split(":")[0]);
         int mm = Integer.parseInt(time.split(":")[0].substring(0, 1));
 
-        return new GregorianCalendar(y, m-1, d, hh, mm);
+        return new GregorianCalendar(y, m - 1, d, hh, mm);
     }
 
     public String stringToPrint() {
@@ -78,16 +78,16 @@ public class Shift implements Serializable {
 
     public long millsFromNow() {
         long time = this.getDateDate().getTimeInMillis() - GregorianCalendar.getInstance().getTimeInMillis();
-        if (time>0)
+        if (time > 0)
             return time;
         return -1;
     }
 
-    public void setName(String name){
+    public void setName(String name) {
         user.setName(name);
     }
 
-    public String getName(){
+    public String getName() {
         return user.getName();
     }
 

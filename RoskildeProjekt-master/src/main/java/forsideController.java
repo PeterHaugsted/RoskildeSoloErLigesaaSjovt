@@ -4,13 +4,13 @@ import javafx.scene.input.MouseEvent;
 import java.io.IOException;
 
 
-public class ForsideController implements AppContact {
+public class forsideController implements appContact {
 
     @FXML
-    private AppHandler app;
+    private appHandler app;
 
     @Override
-    public void setApp(AppHandler apphandler) {
+    public void setApp(appHandler apphandler) {
         this.app = apphandler;
     }
 
