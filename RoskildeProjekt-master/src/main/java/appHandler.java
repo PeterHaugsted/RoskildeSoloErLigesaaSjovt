@@ -25,7 +25,7 @@ public class appHandler extends Application {
     }
 
 
-    public void changescnen(String gui) throws IOException {
+    public void changeScene(String gui) throws IOException {
         FXMLLoader loader = new FXMLLoader(getClass().getResource(gui));
         Scene load = loader.load();
         appContact controller = (appContact) loader.getController();
@@ -38,70 +38,70 @@ public class appHandler extends Application {
     }
 
     public void loginR() throws IOException {
-        changescnen("LogInR.fxml");
+        changeScene("LogInR.fxml");
     }
 
     public void OpenStartR() throws IOException {
-        changescnen("RESPONSIBLE_MENU.fxml");
+        changeScene("RESPONSIBLE_MENU.fxml");
     }
 
     public void GoBackToChooseRorV() throws IOException {
-        changescnen("Forside.fxml");
+        changeScene("Forside.fxml");
     }
 
     public void logout1() throws IOException {
-        changescnen("Forside.fxml");
+        changeScene("Forside.fxml");
     }
 
     public void CreateV() throws IOException {
-        changescnen("CreateVolunteer.fxml");
+        changeScene("CreateVolunteer.fxml");
     }
 
     public void CreateShift() throws IOException {
-        changescnen("CreateShifts.fxml");
+        changeScene("CreateShifts.fxml");
     }
 
     public void EditShifts() throws IOException {
-        changescnen("EditShifts.fxml");
+        changeScene("EditShifts.fxml");
     }
 
     public void EditV() throws IOException {
-        changescnen("EDITVOLUNTEER.fxml");
+        changeScene("EDITVOLUNTEER.fxml");
     }
 
     public void GoBackToRmenu() throws IOException {
-        changescnen("RESPONSIBLE_MENU.fxml");
+        changeScene("RESPONSIBLE_MENU.fxml");
     }
 
     public void CreateBod() throws IOException {
-        changescnen("CreateBod.fxml");
+        changeScene("CreateBod.fxml");
     }
 
     public void CheckUp() throws IOException {
-        changescnen("CheckUp.fxml");
+        changeScene("CheckUp.fxml");
     }
 
     public void loginV() throws IOException {
-        changescnen("LogInV.fxml");
+        changeScene("LogInV.fxml");
     }
 
     public void OpenStartV() throws IOException {
-        changescnen("VOLUNTEER_MENU.fxml");
+        changeScene("VOLUNTEER_MENU.fxml");
     }
 
     public void MyInfo() throws IOException {
-        changescnen("MyInfo.fxml");
+        changeScene("MyInfo.fxml");
     }
 
     public void GoBackToVMenu() throws IOException {
-        changescnen("VOLUNTEER_MENU.fxml");
+        changeScene("VOLUNTEER_MENU.fxml");
     }
 
     public void ContactR() throws IOException {
-        changescnen("contactR.fxml");
+        changeScene("contactR.fxml");
     }
 
     public void ChangePass() throws IOException {
-        changescnen("ChangePass.fxml");
+        changeScene("ChangePass.fxml");
     }
 }
