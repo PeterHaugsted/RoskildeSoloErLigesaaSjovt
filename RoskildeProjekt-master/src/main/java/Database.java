@@ -99,4 +99,34 @@ public class Database {
         }
         return FXCollections.observableArrayList(allShifts);
     }
+
+    public static ArrayList<Shift> getAllShifts() {
+        ArrayList<Shift> allShifts = new ArrayList<>();
+        for (int i = 0; i < users.size(); i++) {
+            for (int j = 0; j < users.get(i).getShifts().size(); j++) {
+                allShifts.add(users.get(i).getShifts().get(j));
+            }
+        }
+        return allShifts;
+    }
+
+    public static boolean removeShiftForEditShiftComtroller(Shift shift) { //This function is created specifically for the editShifts controller
+        //I find the user, from the database, from a new parameter, called volunteer, which is a new way to store names
+        //If the user doesn't exist, the program stops
+        //we get all the shifts from the user we found, and store them inside allshift
+        //If a shift matches, we remove it, and save it.
+        User user = getUserFromName(shift.getVolunteer());
+        if (user == null) {
+            return false;
+        }
+        ArrayList<Shift> allShift = user.getShifts();
+        for (int i = 0; i < allShift.size(); i++) {
+            if (allShift.get(i).matchForEditShiftComtroller(shift)) {
+                allShift.remove(i);
+                Database.saveVToFile();
+                return true;
+            }
+        }
+        return false;
+    }
 }

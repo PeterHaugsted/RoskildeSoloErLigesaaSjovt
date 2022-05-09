@@ -1,7 +1,4 @@
 import java.io.Serializable;
-import java.util.Calendar;
-import java.util.Comparator;
-import java.util.Date;
 import java.util.GregorianCalendar;
 
 import static java.util.Calendar.getInstance;
@@ -11,6 +8,7 @@ public class Shift implements Serializable {
     private String task;
     private String time;
     private User user;
+    private String volunteer;
 
     public User getUser() {
         return user;
@@ -36,7 +34,9 @@ public class Shift implements Serializable {
         this.task = task;
         this.time = time;
         this.user = user;
+        volunteer = user.getName();
     }
+
 
     public String getDate() {
         return date;
@@ -89,6 +89,20 @@ public class Shift implements Serializable {
 
     public String getName() {
         return user.getName();
+    }
+
+    public boolean matchForEditShiftComtroller(Shift shift) {
+
+        if (this.date.equals(shift.getDate())) {
+            if (this.volunteer.equals(shift.getVolunteer())) {
+                if (this.time.equals(shift.getTime())) {
+                    if (this.task.equals(shift.getTask())) {
+                        return true;
+                    }
+                }
+            }
+        }
+        return false;
     }
 
 

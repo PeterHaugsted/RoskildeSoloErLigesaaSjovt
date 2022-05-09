@@ -33,8 +33,9 @@ public class logInVController implements appContact {
         usernameuse = username.getText();
 
         User user = Database.getUserFromName(usernameuse);
-        if (user != null && !user.isResponsible()){
-            if (user.getPassword().equals(passworduse)){
+        System.err.println(user.getPassword());
+        if (user != null && !user.isResponsible()) {
+            if (user.getPassword().equals(passworduse)) {
                 app.OpenStartV();
             }
             login.setText("Wrong username or password");

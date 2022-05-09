@@ -63,7 +63,7 @@ public class createVController implements appContact {
             User user = new User(name1, email1, phonenr1, address1, password1);//new user
             Database.addV(user);
             //display to user
-            password.setText(String.valueOf(pass));
+            password.setText(password1);
             auto.setText("Auto Generated Password:");
             missing.setTextFill(GREEN);
             missing.setText("Volunteer Created Successfully!");
